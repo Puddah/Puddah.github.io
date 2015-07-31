@@ -23,10 +23,10 @@
     #primary {
       background:
      linear-gradient(
-        rgba(30,40,40, 0.80),
-        rgba(30,40,40, 0.80)
+        rgba(30,40,40, 0.70),
+        rgba(30,40,40, 0.70)
     ),
-      url(coding-699395_1280.jpg) no-repeat center center fixed;
+      url(background.jpg) no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -90,12 +90,8 @@
       .ui.fixed.menu {
         display: none !important;
       }
-      .secondary.text.menu .item,
-      .secondary.text.menu .menu {
-        display: none;
-      }
-      .secondary.text.menu .toc.item {
-        display: block;
+      .icon {
+        font-size:1.3em !important;
       }
       .masthead.segment {
         min-height: 350px;
@@ -111,20 +107,61 @@
     }
 
   </style>
+  
+  <script>
+  $(document)
+    .ready(function() {
+
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        });
+
+    });
+  </script>
 </head>
 <body>
+
+<!-- Following Menu -->
+<div class="ui large top fixed hidden menu">
+  <div class="ui container">
+    <a class="active item">Home</a>
+    <div class="right menu">
+      <div class="item">
+        <a class="item">About me</a>
+        <a class="item">Projects</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar menu">
+  <a class="active item">Home</a>
+    <div class="right menu">
+      <a class="item">About me</a>
+      <a class="item">Projects</a>
+    </div>
+</div>
+
 <div class="pusher">
 
   <div id="primary" class="ui inverted vertical masthead center aligned segment">
 
     <div class="ui container">
       <div class="ui large secondary inverted text menu">
-        <a class="toc item">
-          <i class="sidebar icon"></i>
-        </a>
         <a class="active item">Home</a>
-        <a class="item">About me</a>
-        <a class="item">Projects</a>
+        <div class="right menu">
+          <a class="item">About me</a>
+          <a class="item">Projects</a>
+        </div>
       </div>
     </div>
 
@@ -133,10 +170,10 @@
         Tim de Putter
       </h1>
         <div class="ui center aligned horizontal list">
-          <div class="item"><i class="huge github icon"></i></div>
-          <div class="item"><i class="huge twitter icon"></i></div>
-          <div class="item"><i class="huge xing icon"></i></div>
-          <div class="item"><i class="huge mail icon"></i></div>
+          <div class="item"><a href="https://github.com/Puddah" class="circular ui icon button"><i class="huge github icon"></i></a></div>
+          <div class="item"><a href="https://twitter.com/timbowP" class="circular ui icon button"><i class="huge twitter icon"></i></a></div>
+          <div class="item"><a href="https://www.xing.com/profile/Tim_dePutter" class="circular ui icon button"><i class="huge xing icon"></i></a></div>
+          <div class="item"><a class="circular ui icon button"><i class="huge mail icon"></i></a></div>
         </div>
     </div>
 
