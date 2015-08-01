@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
   <script src="semantic/dist/semantic.min.js"></script>
-  <title>- Puddah - Tim de Putter -</title>
 
+  <title>- Puddah - Tim de Putter -</title>
 
   <style type="text/css">
 
@@ -66,6 +67,9 @@
       margin-bottom:1em;
     }
 
+    #about {
+      margin-top:2em;
+    }
 
     @media only screen and (max-width: 700px) {
       .ui.fixed.menu {
@@ -88,11 +92,10 @@
     }
 
   </style>
-  
-  <script>
+
+  <script type="text/javascript">
   $(document)
     .ready(function() {
-
       // fix menu when passed
       $('.masthead')
         .visibility({
@@ -104,7 +107,6 @@
             $('.fixed.menu').transition('fade out');
           }
         });
-
     });
   </script>
 </head>
@@ -113,7 +115,7 @@
 <!-- Following Menu -->
 <div class="ui large top fixed hidden menu">
   <div class="ui container">
-    <a class="active item">Home</a>
+    <a class="item" href="#primary" >Home</a>
     <div class="right menu">
       <div class="item">
         <a href="#about" class="item">About me</a>
@@ -157,6 +159,7 @@
       and lately played around a bit in Elixir/Erlang, Haskell and elm. I'm also into test driven development, domain driven design and simple design.</p>
       <p>When I'm not writing code I do a lot of sports either on the basketball court taking shots or in the gym lifting weights.
       I love traveling with my beautiful girlfriend Steffi and sometimes I just have a beer (maybe some more) with my friends.</p>
+      <p>Figo</p>
   </div>
 </div>
 </body>
