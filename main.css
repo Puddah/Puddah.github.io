@@ -1,0 +1,88 @@
+    .hidden.menu {
+      display: none;
+    }
+
+    .masthead.segment {
+      min-height: 680px;
+      padding: 1em 0em;
+    }
+
+    #primary {
+      background:
+     linear-gradient(
+        rgba(30,40,40, 0.70),
+        rgba(30,40,40, 0.70)
+    ),
+      url(background.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .footer.segment {
+      padding: 5em 0em;
+    }
+
+    .secondary.text.menu .toc.item {
+      display: none;
+    }
+
+    .text.container.segment {
+      font-size:1.3em;
+    }
+
+    .ui.centered.medium.circular.image {
+      margin-bottom:1em;
+    }
+
+    #about > h1 {
+      margin-top:2em;
+    }
+
+    #about {
+      margin-top:1px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      .text.container.segment {
+        padding: 0.5em;
+      }
+    }
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .icon {
+        font-size:1.3em !important;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }

@@ -2,119 +2,20 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="author" content="Tim de Putter"/>
+  <meta name="description" content="Personal Webpage of Tim de Putter, Sotwaredeveloper from Emden, Germany."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
 
-  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
   <script src="semantic/dist/semantic.min.js"></script>
+  <script src="main.js"></script>
 
   <title>- Puddah - Tim de Putter -</title>
 
-  <style type="text/css">
 
-    .hidden.menu {
-      display: none;
-    }
-
-    .masthead.segment {
-      min-height: 680px;
-      padding: 1em 0em;
-    }
-
-    #primary {
-      background:
-     linear-gradient(
-        rgba(30,40,40, 0.70),
-        rgba(30,40,40, 0.70)
-    ),
-      url(background.jpg) no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-
-    .masthead .logo.item img {
-      margin-right: 1em;
-    }
-    .masthead .ui.menu .ui.button {
-      margin-left: 0.5em;
-    }
-    .masthead h1.ui.header {
-      margin-top: 3em;
-      margin-bottom: 0em;
-      font-size: 4em;
-      font-weight: normal;
-    }
-    .masthead h2 {
-      font-size: 1.7em;
-      font-weight: normal;
-    }
-
-    .footer.segment {
-      padding: 5em 0em;
-    }
-
-    .secondary.text.menu .toc.item {
-      display: none;
-    }
-
-    .text.container.segment {
-      font-size:1.3em;
-    }
-
-    .ui.centered.medium.circular.image {
-      margin-bottom:1em;
-    }
-
-    #about {
-      margin-top:2em;
-    }
-
-    @media only screen and (max-width: 480px) {
-      .text.container.segment {
-        padding: 0.5em;
-      }
-    }
-
-    @media only screen and (max-width: 700px) {
-      .ui.fixed.menu {
-        display: none !important;
-      }
-      .icon {
-        font-size:1.3em !important;
-      }
-      .masthead.segment {
-        min-height: 350px;
-      }
-      .masthead h1.ui.header {
-        font-size: 2em;
-        margin-top: 1.5em;
-      }
-      .masthead h2 {
-        margin-top: 0.5em;
-        font-size: 1.5em;
-      }
-    }
-
-  </style>
-
-  <script type="text/javascript">
-  $(document)
-    .ready(function() {
-      // fix menu when passed
-      $('.masthead')
-        .visibility({
-          once: false,
-          onBottomPassed: function() {
-            $('.fixed.menu').transition('fade in');
-          },
-          onBottomPassedReverse: function() {
-            $('.fixed.menu').transition('fade out');
-          }
-        });
-    });
-  </script>
 </head>
 <body>
 
@@ -124,7 +25,7 @@
     <a class="item" href="#primary" >Home</a>
     <div class="right menu">
       <div class="item">
-        <a href="#about" class="item">About me</a>
+        <a href="#about" class="item">About</a>
         <a class="item">Projects</a>
       </div>
     </div>
@@ -139,7 +40,7 @@
       <div class="ui large secondary inverted text menu">
         <a class="active item">Home</a>
         <div class="right menu">
-          <a href="#about" class="item">About me</a>
+          <a href="#about" class="item">About</a>
           <a class="item">Projects</a>
         </div>
       </div>
@@ -157,8 +58,8 @@
         </div>
     </div>
   </div>
-  <div class="ui center aligned vertical very padded text container segment">
-    <h1 id="about" class="ui header">About</h1>
+  <div id="about" class="ui center aligned vertical very padded text container segment">
+    <h1 class="ui header">About me</h1>
       <p>Hi, my name is Tim, I'm a software developer living in Emden, which is located at the beautiful north sea coast of germany.</p>
       <img class="ui centered medium circular image" src="me.jpg" alt="thats me"/>
       <p>I have written code in Java, C, C++, C#, Javascript and Ruby. I have started to code in Pascal and Basic in the mid 1990s
