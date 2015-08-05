@@ -23,9 +23,11 @@
     .masthead .logo.item img {
       margin-right: 1em;
     }
+
     .masthead .ui.menu .ui.button {
       margin-left: 0.5em;
     }
+
     .masthead h1.ui.header {
       margin-top: 3em;
       margin-bottom: 0em;
@@ -53,12 +55,14 @@
       margin-bottom:1em;
     }
 
-    #about > h1 {
-      margin-top:2em;
+    .section {
+      margin-top:1px;
+      padding-top:5.5em;
+      padding-bottom:5em;
     }
 
-    #about {
-      margin-top:1px;
+    .alternating.section {
+      background-color:#FAFAFA
     }
 
     @media only screen and (max-width: 480px) {
