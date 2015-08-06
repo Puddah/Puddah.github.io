@@ -62,7 +62,11 @@
     }
 
     .alternating.section {
-      background-color:#FAFAFA
+      background-color:#FDFDFE
+    }
+
+    .ui.items > .item {
+      margin-top:3em;
     }
 
     @media only screen and (max-width: 480px) {
