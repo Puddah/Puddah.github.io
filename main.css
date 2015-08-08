@@ -1,37 +1,5 @@
 
-    .masthead.segment {
-      min-height: 680px;
-      padding: 1em 0em;
-    }
 
-    #primary {
-      background:
-     linear-gradient(
-        rgba(30,40,40, 0.70),
-        rgba(30,40,40, 0.70)
-    ),
-      url(background.jpg) no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-
-    .masthead .ui.menu .ui.button {
-      margin-left: 0.5em;
-    }
-
-    .masthead h1.ui.header {
-      margin-top: 3em;
-      margin-bottom: 0em;
-      font-size: 4em;
-      font-weight: normal;
-    }
-
-    .masthead h2 {
-      font-size: 1.7em;
-      font-weight: normal;
-    }
 
     .secondary.text.menu .toc.item {
       display: none;
