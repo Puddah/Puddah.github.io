@@ -65,6 +65,18 @@
       background-color:#FDFDFE
     }
 
+    .ui.header {
+      color: #3CC6BC;
+    }
+
+    a.ui.inverted.button {
+      color:#61D8CF;
+    }
+
+    .description a {
+      color: #61D8CF;
+    }
+
     .ui.items > .item {
       margin-top:3em;
     }
