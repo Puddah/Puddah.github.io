@@ -20,10 +20,6 @@
       background-size: cover;
     }
 
-    .masthead .logo.item img {
-      margin-right: 1em;
-    }
-
     .masthead .ui.menu .ui.button {
       margin-left: 0.5em;
     }
@@ -34,13 +30,10 @@
       font-size: 4em;
       font-weight: normal;
     }
+
     .masthead h2 {
       font-size: 1.7em;
       font-weight: normal;
-    }
-
-    .footer.segment {
-      padding: 5em 0em;
     }
 
     .secondary.text.menu .toc.item {
@@ -58,11 +51,7 @@
     .section {
       margin-top:1px;
       padding-top:5.5em;
-      padding-bottom:5em;
-    }
-
-    .alternating.section {
-      background-color:#FDFDFE
+      padding-bottom:1em;
     }
 
     .ui.header {
