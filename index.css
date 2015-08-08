@@ -2,3 +2,11 @@
     .hidden.menu {
       display: none;
     }
+
+
+    .footer {
+      min-height: 200px;
+      padding: 1em 0em;
+      background-color:#EFEFEF !important;
+      margin-top:4em !important;
+    }
