@@ -23,6 +23,10 @@
       color: #3CC6BC;
     }
 
+    .ui.items .header {
+      color: #3CC6BC !important;
+    }
+
     a.ui.inverted.button {
       color:#61D8CF;
     }
