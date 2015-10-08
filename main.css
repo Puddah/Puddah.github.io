@@ -23,6 +23,10 @@
       color: #3CC6BC;
     }
 
+    .ui.header a {
+      color: #3CC6BC;
+    }
+
     .ui.items .header {
       color: #3CC6BC !important;
     }
