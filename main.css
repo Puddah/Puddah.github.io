@@ -1,6 +1,4 @@
 
-
-
     .secondary.text.menu .toc.item {
       display: none;
     }
@@ -25,10 +23,6 @@
 
     .ui.header a {
       color: #3CC6BC;
-    }
-
-    .ui.items .header {
-      color: #3CC6BC !important;
     }
 
     a.ui.inverted.button {
