@@ -5,11 +5,11 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/x-icon" href="http://cartodb.github.io/odyssey.js/sandbox/favicon.png">
-  <link rel="icon" type="image/png" href="http://cartodb.github.io/odyssey.js/sandbox/favicon.png">
+  <link rel="icon" type="image/x-icon" href="http://cartodb.github.io/odyssey.js/editor/favicon.png">
+  <link rel="icon" type="image/png" href="http://cartodb.github.io/odyssey.js/editor/favicon.png">
 
-  <link rel="stylesheet" href="http://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/themes/css/cartodb.css">
-  <link rel="stylesheet" href="http://cartodb.github.io/odyssey.js/sandbox/css/scroll.css">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css">
+  <link rel="stylesheet" href="http://cartodb.github.io/odyssey.js/editor/css/scroll.css">
   <script src="http://cartodb.github.io/odyssey.js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
@@ -34,7 +34,8 @@
     </span></span></div>
   </div> <!-- layout -->
 
-  <script src="http://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/cartodb.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
   <script src="http://cartodb.github.io/odyssey.js/dist/odyssey.js" charset="UTF-8"></script>
 
   <script>
@@ -65,8 +66,6 @@
       },
 
       update: function(actions) {
-        var self = this;
-
         this.story.clear();
 
         if (this.baseurl && (this.baseurl !== actions.global.baseurl)) {
@@ -75,46 +74,6 @@
           this.basemap.setUrl(this.baseurl);
         }
 
-        if (this.cartoDBLayer && ("http://"+self.cartoDBLayer.options.user_name+".cartodb.com/api/v2/viz/"+self.cartoDBLayer.options.layer_definition.stat_tag+"/viz.json" !== actions.global.vizjson)) {
-          this.map.removeLayer(this.cartoDBLayer);
-
-          this.cartoDBLayer = null;
-          this.created = false;
-        }
-
-        if (actions.global.vizjson && !this.cartoDBLayer) {
-          if (!this.created) { // sendCode debounce < vis loader
-            cdb.vis.Loader.get(actions.global.vizjson, function(vizjson) {
-              self.map.fitBounds(vizjson.bounds);
-
-              cartodb.createLayer(self.map, vizjson)
-                .done(function(layer) {
-                  self.cartoDBLayer = layer;
-
-                  var sublayer = layer.getSubLayer(0),
-                      layer_name = layer.layers[0].options.layer_name,
-                      filter = actions.global.cartodb_filter ? " WHERE "+actions.global.cartodb_filter : "";
-
-                  sublayer.setSQL("SELECT * FROM "+layer_name+filter)
-
-                  self.map.addLayer(layer);
-
-                  self._resetActions(actions);
-                }).on('error', function(err) {
-                  console.log("some error occurred: " + err);
-                });
-            });
-
-            this.created = true;
-          }
-
-          return;
-        }
-
-        this._resetActions(actions);
-      },
-
-      _resetActions: function(actions) {
         // update footer title and author
         var title_ = actions.global.title === undefined ? '' : actions.global.title,
             author_ = actions.global.author === undefined ? 'Using' : 'By '+actions.global.author+' using';
@@ -169,16 +128,6 @@
         }
       }
     });
-  </script>
-
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-20934186-21', 'cartodb.github.io');
-    ga('send', 'pageview');
   </script>
 
 
