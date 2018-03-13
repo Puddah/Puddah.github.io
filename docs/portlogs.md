@@ -1,5 +1,5 @@
-## portlogs.com - Technische Beschreibung
-### Systemarchitektur - Überblick
+## portlogs.com - Technische Übersicht
+### Systemarchitektur
 Die Website portlogs.com ist als serverseitig 3-Tier-Webapplikation entworfen und implementiert. Als Webtier wird der Reverseproxy-http-Server "Ngnx" betrieben, welcher die Anfragen an eine auf dem "Ruby on rails" Framework basierende Webapplikation weiterleitet. Sämtliche durch die Webapplikation erzeugten Daten werden in einer Mongodb Datenbank persistiert.
 
 ###  Details zur Webapplikation
