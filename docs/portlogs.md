@@ -10,8 +10,9 @@ Als Besonderheit ist zu nennen, dass zum Zweck der Nachvollziehbarkeit, und um m
 Da wenig dynamische Inhalte genutzt werden, wird das Rendering der HTML-Dokumente komplett serverseitg vorgenommen, ein clientseitiges Framework (Angular, react, etc.) wird nicht genutzt.
 
 ### Infrastruktur
-portlogs.com wird auf einem virtuellen Linux-Server der Firma strato betrieben. Für das Senden und Empfangen von Emails werden ebenfalls die von Strato angebotenen Dienstleistungen genutzt.
+portlogs.com wird auf einem virtuellen Linux-Server der Firma strato betrieben. Für das Senden und Empfangen von Emails werden ebenfalls die von Strato angebotenen Dienstleistungen genutzt. Weitere Dienstleistungen Dritter (wie beispielsweise zur Authentifizierung) werden direkt für den Betrieb der Website portlogs.com nicht genutzt. Lediglich indirekt - für das Hosten des Sourcecodes - wird auf das Angebot von Bitbucket zurück gegriffen.
 
+***
 
 ### Technische Daten
 |                 |                 |
