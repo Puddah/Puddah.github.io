@@ -11,3 +11,17 @@ Da wenig dynamische Inhalte genutzt werden, wird das Rendering der HTML-Dokument
 
 ### Infrastruktur
 portlogs.com wird auf einem virtuellen Linux-Server der Firma strato betrieben. Für das Senden und Empfangen von Emails werden ebenfalls die von Strato angebotenen Dienstleistungen genutzt.
+
+
+### Technische Daten
+|                 |                 |
+|---------------------|---------------------|
+| registrierte Nutzer | 138                 |
+| Programmiersprache  | ruby 1.9.3          |
+| reverse-proxy       | nginx 1.1.19        |
+| Webframework        | ruby on rails 3.1.0 |
+| rack-server         | unicorn 4.5.0       |
+| DBMS                | mongodb 2.2.3       |
+| Versionsverwaltung  | git                 |
+| Codehoster          | bitbucket           |
+| Serverbetreiber     | strato              |
