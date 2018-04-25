@@ -25,8 +25,8 @@
       color: #3CC6BC;
     }
 
-    .inverted.logo {
-      color:#61D8CF !important;
+    a.ui.inverted.logo.button {
+      color:#61D8CF;
     }
 
     .description a {
