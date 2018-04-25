@@ -1,2 +1,1 @@
-exclude:
-  -node_modules
+exclude: ["node_modules", "tigefa.jquery.json", "deploy.cmd", "composer.json", "circle.yml", "README", "iron.json", "bower.json", "params.json", ".coveralls.yml", ".travis.yml", ".gitignore", ".gitattributes", ".gitmodules", "README.md", "LICENSE", "Rakefile", "CHANGELOG.md", "Gemfile", "Gemfile.lock"]
