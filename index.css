@@ -37,7 +37,7 @@
                 rgba(30,40,40, 0.30),
                 rgba(30,40,40, 0.30)
             ),
-            url(background-small.jpg) no-repeat top left fixed;
+            url(background-small.jpg) 480px auto no-repeat top left fixed;
         }
     }
 
