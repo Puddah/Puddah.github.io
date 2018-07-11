@@ -22,7 +22,7 @@
                 rgba(30,40,40, 0.70),
                 rgba(30,40,40, 0.70)
             ),
-            url(background.jpg) no-repeat center center fixed;
+            url(background.jpg) no-repeat top center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -37,7 +37,7 @@
                 rgba(30,40,40, 0.30),
                 rgba(30,40,40, 0.30)
             ),
-            url(background-small.jpg) no-repeat center center fixed;
+            url(background-small.jpg) no-repeat top center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
