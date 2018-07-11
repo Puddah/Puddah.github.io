@@ -23,7 +23,7 @@
                 rgba(30,40,40, 0.20)
             ),
             url(background.jpg) no-repeat center -120px fixed,
-            rgb(26,28,28);
+            rgb(25,25,25);
             background-size: 800px auto;
         }
     }
@@ -36,7 +36,7 @@
                 rgba(30,40,40, 0.20)
             ),
             url(background-small.jpg) no-repeat center -25px fixed,
-            rgb(26,28,28);
+            rgb(25,25,25);
             background-size:  300px auto;
         }
     }
