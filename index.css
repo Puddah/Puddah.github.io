@@ -34,12 +34,12 @@
         #primary {
             background:
             linear-gradient(
-                rgba(30,40,40, 0.30),
-                rgba(30,40,40, 0.30)
+                rgba(30,40,40, 0.50),
+                rgba(30,40,40, 0.50)
             ),
-            url(background-small.jpg) no-repeat top left fixed,
+            url(background-small.jpg) no-repeat center top fixed,
             rgba(30,40,40,1);
-            background-size:  480px auto;
+            background-size:  400px auto;
         }
     }
 
