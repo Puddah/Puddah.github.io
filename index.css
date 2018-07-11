@@ -19,14 +19,12 @@
         #primary {
             background:
             linear-gradient(
-                rgba(30,40,40, 0.70),
-                rgba(30,40,40, 0.70)
+                rgba(30,40,40, 0.20),
+                rgba(30,40,40, 0.20)
             ),
-            url(background.jpg) no-repeat top center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
+            url(background.jpg) no-repeat center -120px fixed,
+            rgb(26,28,28);
+            background-size: 800px auto;
         }
     }
 
