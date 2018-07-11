@@ -19,8 +19,8 @@
         #primary {
             background:
             linear-gradient(
-                rgba(30,40,40, 0.70),
-                rgba(30,40,40, 0.70)
+                rgba(30,40,40, 0.30),
+                rgba(30,40,40, 0.30)
             ),
             url(background.jpg) no-repeat center center fixed;
             -webkit-background-size: cover;
