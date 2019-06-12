@@ -53,7 +53,7 @@
       font-weight: normal;
     }
 
-    .masthead ui.text.container {
+    .masthead .ui.text.container {
         height: 560px;
         background-position: bottom;
         background: radial-gradient(rgba(0,0,0,0.9) 5%,  rgba(0,0,0,0) 71%, rgba(0,0,0,0) 1%);        
@@ -81,7 +81,7 @@
         padding-top: 1.5em;
       }
         
-      .masthead ui.text.container {
+      .masthead .ui.text.container {
         height: 240px;
       }        
 
