@@ -15,6 +15,7 @@
       margin-top:4em !important;
     }
 
+
     @media (min-width: 480px) {
         #primary {
             background:
@@ -52,6 +53,12 @@
       font-weight: normal;
     }
 
+    .masthead ui.text.container {
+        height: 560px;
+        background-position: bottom;
+        background: radial-gradient(rgba(0,0,0,0.9) 5%,  rgba(0,0,0,0) 71%, rgba(0,0,0,0) 1%);        
+    }
+
     .masthead h2 {
       font-size: 1.7em;
       font-weight: normal;
@@ -73,6 +80,10 @@
         font-size: 2em;
         padding-top: 1.5em;
       }
+        
+      .masthead ui.text.container {
+        height: 240px;
+      }        
 
       .masthead h2 {
         margin-top: 0.5em;
