@@ -1,3 +1,8 @@
+    @media only screen and (max-width:991px) {
+     .cellphone-hide {
+      display:none!important
+     }
+    }
 
     .secondary.text.menu .toc.item {
       display: none;
